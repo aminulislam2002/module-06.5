@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo</title>
+    <style>
+      /* use pseudo class for h1 */
+      h1 {
+        color: darkred;
+        background-color: blanchedalmond;
+      }
+      h1:hover {
+        color: blue;
+      }
+      /* use pesudo class for input */
+      .midel-input:focus {
+        color: red;
+        font-weight: bold;
+      }
+      /* use pesudo class for a */
+      a:visited {
+        color: blue;
+      }
+      /* use pesudo class and child for ul */
+      li:first-child {
+        color: blue;
+      }
+      li:last-child {
+        color: red;
+      }
+      /* jor li guloke style */
+      li:nth-child(2n) {
+        background-color: aqua;
+      }
+      /* bijor li guloke styly */
+      li:nth-child(2n + 1) {
+        background-color: crimson;
+      }
+      /* use pesudo element for h3 */
+      h3::before{
+        content: "HELLO ";
+        color: blue;
+      }
+      h3::after{
+        content: " (The end)";
+        color: red;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is normal heading for pseudo property</h1>
+    <input type="text" />
+    <input type="text" class="midel-input" />
+    <input type="text" /> <br />
+    <a href="https://web.facebook.com/Aminulislamemon2002">Aminul Islam</a> <br />
+    <a href="https://web.facebook.com/Aminulislamemon2002">Facebook</a> <br />
+    <ul>
+      <li>Aminul</li>
+      <li>Ema</li>
+      <li>Emon</li>
+      <li>Tamima</li>
+      <li>Aminul Islam</li>
+      <li>Tamima Ema</li>
+      <li>Mithun</li>
+      <li>Miraj</li>
+      <li>Ovi</li>
+      <li>Esa</li>
+    </ul>
+    <!-- h3*6{midle size header $} -->
+    <h3>midle size header 1</h3>
+    <h3>midle size header 2</h3>
+    <h3>midle size header 3</h3>
+    <h3>midle size header 4</h3>
+    <h3>midle size header 5</h3>
+    <h3>midle size header 6</h3>
+  </body>
+</html>
